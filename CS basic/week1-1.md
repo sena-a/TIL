@@ -135,6 +135,14 @@ mv a.txt 경로/b.txt : a.txt라는 파일을 b.txt라는 이름으로 해당 �
 
 ```
 
-# 3. refer
+# 3. reference
 
 https://github.com/fds11/fds-introduction
+
+
+
+# Index
+
+|  | DATE | CATEGORY | DESCRIPTION |
+| --- | --- | ------- | --- |
+| 01 | 18/09/03 | CS Basic | 쉘 명령어 |

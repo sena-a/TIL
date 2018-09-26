@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header clearfix">
+            <h1 class="logo"><a href="#"><img src="images/webcafe-logo.png" alt="webcafe"></a></h1>
+            <ul class="member">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+            <form action="#" method="POST" class="search-form">
+                <fieldset>
+                    <legend>검색 폼</legend>
+                    <div class="search-container">
+                        <label for="search-box"></label>
+                        <input id="search-box" type="search" placeholder="검색어를 입력하세요" required>
+                        <button type="submit" class="btn-search">검색</button>
+                    </div>
+                </fieldset>
+            </form>
+        </header>
+        <nav class="navigation">
+            <h2 class="readable-hidden">메인메뉴</h2>
+            <button class="btn-menu">
+                <span class="menubar top"></span>
+                <span class="menubar middle"></span>
+                <span class="menubar bottom"></span>
+            </button>
+            <ul class="menu">
+                <li class="menu-item">
+                    <span class="menu-title">HTML에 대해</span>
+                    <ul class="sub-menu">
+                        <li><a href="#">HTML5 소개</a></li>
+                        <li><a href="#">레퍼런스 소개</a></li>
+                        <li><a href="#">활용 예제</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-title">CSS에 대해</span>
+                    <ul class="sub-menu">
+                        <li><a href="#">CSS 소개</a></li>
+                        <li><a href="#">CSS2 VS CSS3</a></li>
+                        <li><a href="#">CSS 애니메이션</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-title">웹표준/웹접근성</span>
+                    <ul class="sub-menu">
+                        <li><a href="#">웹표준이란?</a></li>
+                        <li><a href="#">웹접근성의 개요</a></li>
+                        <li><a href="#">HTML5의 현재와 미래</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-title">묻고 답하기</span>
+                    <ul class="sub-menu">
+                        <li><a href="#">묻고 답하기</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1대1 질문</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-title">자료실</span>
+                    <ul class="sub-menu">
+                        <li><a href="#">공개 자료실</a></li>
+                        <li><a href="#">이미지 자료실</a></li>
+                        <li><a href="#">예제 자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <section class="recommend-book">
+                <h2 class="recommend-book-heading main-heading">
+                    추천 서적
+                    <div class="recommend-book-eng main-heading-eng">
+                        Recommend Book
+                    </div>
+                </h2>
+                <figure class="book-thumbnail">
+                    <img src="images/book_rwd.jpg" alt="추천 도서 이미지">
+                    <figcaption>
+                        <cite>반응형웹 핵심 가이드북 도서</cite>
+                        <p>저자 김데레사</p>
+                        <p>★★★★☆</p>
+                    </figcaption>
+                </figure>
+                <p class="book-detail">
+                    반응형웹 디자인을 위한 핵심 내용을 다루고 있으며 미디어쿼리, 유연한 레이아웃, 반응형 이미지 기법을 학습할 수 있다. 모바일 및 다양한 해상도에 대응이 가능한 웹디자인을 이 책으로 시작해 보자!
+                </p>
+            </section>
+            <section class="news">
+                <h2 class="news-heading main-heading">
+                    새소식
+                    <div class="news-heading-eng main-heading-eng">
+                        WebCafe News
+                    </div>
+                </h2>
+                <figure>
+                    <video class="news-video" poster="media/poster.jpg" controls>
+                        <source src="media/stories.mp4">
+                        <track src="media/stories-en.vtt" kind="captions" srclang="en" label="English">
+                    </video>
+                    <figcaption class="readable-hidden">구글 개발자 이야기 동영상</figcaption>
+                </figure>
+                <p>
+                    구글플레이는 다양한 분야에서 활약하고 있는 국내 개발사들을 모시고 직접 이야기를 나눠보는 ‘구글플레이 개발자와의 대화’ 행사를 정기적으로 개최할 예정입니다. 오늘 3월 29일(수) 구글 캠퍼스 서울에서 열린 첫 번째 ‘구글플레이 개발자와의 대화’는 ‘해외에서 빵터진 한국 앱'을 주제로 진행됐는데요, 국내 앱 시장은 물론 글로벌 시장에서도 주목 받으며 글로벌 진출의 본보기가 되고 있는 개발사 세 곳과 함께 했습니다.
+                </p>
+                <time datetime="2018-09-26T17:54:00" class="icon-calendar">2018-09-26</time>
+            </section>
+            <section class="board">
+                <h2 class="board-heading main-heading">
+                    게시판
+                    <div class="board-heading-eng main-heading-eng">
+                        WebCafe Board
+                    </div>
+                </h2>
+                <ul class="board-list">
+                    <li class="icon-star">
+                        <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
+                        <time datetime="2018-09-26T20:00:00">2018-09-26</time>
+                    </li>
+                    <li class="icon-star">
+                        <a href="#">W3C 사이트 리뉴얼 및 공지사항</a>
+                        <time datetime="2018-09-26T20:00:00">2018-09-26</time>
+                    </li>
+                    <li class="icon-star">
+                        <a href="#">KWCAG 2.1 소식</a>
+                        <time datetime="2018-09-26T20:00:00">2018-09-26</time>
+                    </li>
+                    <li class="icon-star">
+                        <a href="#">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+                        <time datetime="2018-09-26T20:00:00">2018-09-26</time>
+                    </li>
+                    <li class="icon-star">
+                        <a href="#">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+                        <time datetime="2018-09-26T20:00:00">2018-09-26</time>
+                    </li>
+                </ul>
+                <a href="#" class="board-more icon-plus">더보기</a>
+            </section>
+            <section class="favorite-site">
+                <h2 class="favorite-heading main-heading">
+                    인기사이트
+                    <div class="favorite-heading-eng main-heading-eng">
+                        Favorite Site
+                    </div>
+                </h2>
+                <ol class="favorite-list">
+                    <li><a href="http://ko.learnlayout.com/" target="_blank">Learn CSS Layout</a></li>
+                    <li><a href="http://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a></li>
+                    <li><a href="http://cssgridgarden.com/" target="_blank">CSS Grid Garden</a></li>
+                    <li><a href="https://developer.mozilla.org/ko/" target="_blank">MDN Web Docs</a></li>
+                </ol>
+            </section>
+            <article class="twitter clearfix">
+                <h2 class="twitter-heading main-heading">
+                    트위터
+                    <div class="twitter-heading-eng main-heading-eng">
+                        Twitter
+                    </div>
+                </h2>
+                <dl class="twitter-address">
+                    <dt class="twitter-name">김데레사 :</dt>
+                    <dd class="readable-hidden">트위터 사용자 이름</dd>
+                    <dt class="twitter-id"><a href="#">@seulbinim</a></dt>
+                    <dd class="readable-hidden">트위터 사용자 아이디</dd>
+                </dl>
+                <img src="images/seulbinim.jpg" alt="트위터 프로필 이미지">
+                <p class="twitter-news">
+                    웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다. 참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.
+                </p>
+                <time datetime="2018-09-26T20:54:21" class="icon-calendar">2018-09-26</time>
+            </article>
+        </main>
+        <article class="slogan">
+            <h2 class="slogan-heading">슬로건</h2>
+            <p class="slogan-content">
+                <q cite="http://w3.org/WAI">The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</q>
+                Tim Berners - Lee , W3C Director and inventor of the World Wide Web
+            </p>
+        </article>
+        <footer class="footer">
+            <address class="address">
+                <span>서울시 마포구 상수동 123-12 한주빌딩 5층</span>
+                <span>전화: <a href="tel:022345678">02-234-5678</a></span>
+                <span>이메일: <a href="#">seulbinim@gmail.com</a></span>
+            </address>
+            <small class="copyright">
+                    Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.
+            </small>
+        </footer>
+    </div>
+    <script defer src="jquery.min.js"></script>
+    <script defer src="rwc.js"></script>
+</body>
+
+</html>

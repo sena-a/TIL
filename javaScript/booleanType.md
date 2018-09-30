@@ -237,3 +237,12 @@ if (0) {
 ```js
 Boolean('cat'); // true
 ```
+
+# 2. Today I Found Out
+
+```
+단순한 것 같아도 헷갈리기 쉬워서 기본 원리를 잘 익혀야 할 것 같다.
+```
+
+# 3. reference
+- https://helloworldjavascript.net/pages/140-string.html

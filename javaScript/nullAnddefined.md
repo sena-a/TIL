@@ -37,10 +37,13 @@ obj.prop; // undefined
 ```js
 let foo; // 값을 대입한 적 없음
 let bar = undefined; // 값을 대입함
+
 foo; // undefined
 bar; // undefined (??)
+
 let obj1 = {}; // 속성을 지정하지 않음
 let obj2 = {prop: undefined}; // 속성을 지정함
+
 obj1.prop; // undefined
 obj2.prop; // undefined (??)
 ```
@@ -53,18 +56,18 @@ obj2.prop; // undefined (??)
 ```js
 // 이렇게 하는 경우는 많지 않습니다.
 {
-  name: 'Seungha',
+  name: 'abc',
   address: null
 }
 
 // 그냥 이렇게 하는 경우가 많습니다.
 {
-  name: 'Seungha'
+  name: 'abc'
 }
 
 // 어쨌든 이렇게 하지는 말아주세요.
 {
-  name: 'Seungha',
+  name: 'abc',
   address: undefined
 }
 ```
@@ -90,11 +93,13 @@ function printIfNotNull(input) {
 // 더욱 간단한 방법
 
 // 아래 세 개의 식은 완전히 같은 의미입니다.
+
 input !== null && input !== undefined;
 input != null;
 input != undefined;
 
 // 아래 세 개의 식은 완전히 같은 의미입니다.
+
 input === null || input === undefined;
 input == null;
 input == undefined;
@@ -125,4 +130,4 @@ undefined == 1  // false
 ```
 
 # 3. reference
-- https://helloworldjavascript.net/pages/140-string.html
+- https://helloworldjavascript.net/pages/160-null-undefined.html

@@ -40,8 +40,8 @@
     // cat이라는 객체를 생성해보자
 
     const cat = {
-        name: 'vely', // 속성 이름 - 'name', 속성 값 - 'sena'
-        'now age': 7, // 속성 이름 - 'cat age', 속성 값 - 27
+        name: 'vely', // 속성 이름 - 'name', 속성 값 - 'vely'
+        'now age': 7, // 속성 이름 - 'cat age', 속성 값 - 7
         };
 
     // cat age란 문자열은 공백을 포함했기 때문에 식별자 규칙을 만족하지 않음. 때문에 ''로 둘러준다.
@@ -150,7 +150,7 @@ const cat = {
     console.log(cat.name) // 'vely'! 값에 접근했다.
     ```
     
-    - (.) 뒤에 오는 리터럴의 문자열 그대로 프로퍼티 이름으로 사용된다.
+    - (.) 뒤에 오는 리터럴은 그 문자열 리터럴 그대로의 프로퍼티 이름을 찾는다.
 
 - 대괄호 표기법 (Bracket notation)
     - 프로퍼티 이름이 식별자 규칙을 만족하지 않는 문자열이라면 대괄호 표기법을 사용한다.
@@ -377,8 +377,8 @@ const dog = {
     intro
 }
 
-cat.introduce(); // `Hi, My name is vely`
-dog.introduce(); // `Hi, My name is lily`
+cat.intro(); // `Hi, My name is vely`
+dog.intro(); // `Hi, My name is lily`
 ```
 
 - 호출되는 시점에서 this의 내용이 정의되는 것이기 때문에, cat객체가 호출할 때 this에 cat이, dog 객체가 호출할 때 this에 dog가 들어가면서 같은 함수를 재사용함에도 불구하고 메소드의 동작에는 문제 없다.

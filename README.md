@@ -15,3 +15,4 @@
 | JavaScript | 18/10/01 | [statement](https://github.com/sena-a/TIL/blob/master/javaScript/statement.md) |
 | JavaScript | 18/10/02 | [object](https://github.com/sena-a/TIL/blob/master/javaScript/object.md) |
 | JavaScript | 18/10/02 | [array](https://github.com/sena-a/TIL/blob/master/javaScript/array.md) |
+| JavaScript | 18/10/04 | [prototype](https://github.com/sena-a/TIL/blob/master/javaScript/prototype.md) |

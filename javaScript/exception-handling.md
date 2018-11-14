@@ -353,6 +353,8 @@ Promise 객체의 예외 처리 방식은, 일반적인 동기식 예외 처리 
 # 2. Today I Found Out
 
 ```
+2018.11.13
+
 tip: promise에도 finally 문법이 추가 될 예정이라고 한다.
 ```
 

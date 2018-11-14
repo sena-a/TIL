@@ -314,11 +314,46 @@ Promise.resolve()
   .then(console.log); 
 ```
 
+---
+
+### 비동기 함수
+
+Promise 객체의 예외 처리 방식은, 일반적인 동기식 예외 처리 방식과 다르게 콜백을 사용하고 있어서 코드를 복잡하게 만드는 원인이 된다. 
+
+비동기 함수 내부에서는 `await`를 통해, rejected 상태가 된 Promise 객체를 동기식 예외 처리 방식과 동일하게 `try...catch...finally` 구문으로 처리할 수 있습니다.
+  - rejected 상태인 프로미스를 await하면 에러가 발생하고 그 에러는 try, catch 블록으로 잡아낼 수 있다. 
+  
+  - 비동기 함수는 비동기식 코드를 동기식 코드처럼 쓸 수 있는 장점이 있다!
+  
+  ```js
+  async function func() {
+    try {
+      const res = await fetch('https://nonexistent-domain.nowhere');
+    } catch (e) {
+      console.log(e.message);
+    }
+  }
+
+  func(); // 출력 결과: Failed to fetch
+  ```
+  - 단, 프로미스 객체에 대해 await하지 않는 경우, 에러를 잡을 수 없다. 즉, await한 경우에만 잡을 수 있습니당
+
+  ```js
+  async function func() {
+    try {
+      fetch('https://nonexistent-domain.nowhere');
+    } catch (e) {
+      console.log(e.message);
+    }
+  }
+
+  func(); // 아무것도 출력되지 않습니다.
+  ```
 
 # 2. Today I Found Out
 
 ```
-
+tip: promise에도 finally 문법이 추가 될 예정이라고 한다.
 ```
 
 # 3. reference

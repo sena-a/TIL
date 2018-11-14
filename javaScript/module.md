@@ -159,7 +159,8 @@ import { foo, spam, add, Person } from './common.js'
 
 // export default + 모듈을 대표하는 하나의 값
 
-export default class Person extends from React.Component // Person 클래스가 모듈을 대표하는 하나의 값이고 이를 default export 해주는 중
+export default class Person extends from React.Component 
+// Person 클래스가 모듈을 대표하는 하나의 값이고 이를 default export 해주는 중
 ```
 `default export`를 가져올 때는 `import` 구문에서 중괄호를 생략한다.
 

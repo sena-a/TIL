@@ -232,3 +232,6 @@ ES6 및 JSX 코드가 모두 올바르게 표시되도록 선택한 편집기에
 ```
 
 # 3. reference
+- https://reactjs-org-ko.netlify.com/docs/introducing-jsx.html
+
+- https://velopert.com/3626

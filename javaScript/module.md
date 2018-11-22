@@ -169,6 +169,22 @@ export default class Person extends from React.Component
 
 import Person from './person.js'
 ```
+`export default` 뒤에는 임의의 표현식이 올 수 있다. 즉, 함수 표현식이나 클래스 표현식도 올 수 있고, 익명 함수 & 클래스도 얼마든지 가능하다.
+
+```js
+// add.js
+// 익명 함수
+export default function (x, y) {
+  return x + y;
+}
+```
+
+```js
+// import할 때 이름을 마음대로 지정하여 가져왔음
+import add from './add.js';
+console.log(add(1, 2)); // 3
+```
+
 
 `import` 구문에서 `default export`와 `named export`를 동시에 가져올 수 있다.
 

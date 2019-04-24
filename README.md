@@ -1,3 +1,3 @@
 # TIL
 
-- Today I Learnedd
+- Today I Learned
